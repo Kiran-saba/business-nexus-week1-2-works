@@ -13,6 +13,7 @@ Clone the repository:
    Go to project folder:
    cd nexus
    Install dependencies:
+   
    npm install
    Run the project:
    npm run dev
