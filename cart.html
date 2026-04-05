@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - E-commerce</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <section id="header">
+        <a href="index.html"><img class="logo-picture" src="/ks logo.png" alt="kiranlogo"></a>
+        <div class="search-wrapper">
+            <input type="text" id="searchInput" placeholder="Search for products..." />
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="products.html">PRODUCT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a class="active" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Page Header -->
+    <section id="page-header">
+        <h2>Shopping Cart</h2>
+        <p>Review your selected products</p>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart" class="section-p1">
+        <div class="cart-container">
+
+            <!-- Cart Items -->
+            <div class="cart-items">
+                <h3>Your Cart</h3>
+
+                <div class="cart-item">
+                    <img src="/shoes.jfif" alt="Product">
+                    <div class="item-details">
+                        <h5>Cartoon Shoes</h5>
+                        <p>Price: $78</p>
+                        <input type="number" value="1" min="1">
+                    </div>
+                    <button class="remove"><i class="fas fa-trash"></i></button>
+                </div>
+
+                <div class="cart-item">
+                    <img src="/clothes.jfif" alt="Product">
+                    <div class="item-details">
+                        <h5>Cartoon Clothes</h5>
+                        <p>Price: $48</p>
+                        <input type="number" value="1" min="1">
+                    </div>
+                    <button class="remove"><i class="fas fa-trash"></i></button>
+                </div>
+
+            </div>
+
+            <!-- Cart Summary -->
+            <div class="cart-summary">
+                <h3>Cart Summary</h3>
+                <p>Total Items: <span id="total-items">2</span></p>
+                <p>Total Price: $<span id="total-price">126</span></p>
+                <button class="checkout">Proceed to Checkout</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get email updates about our latest shop and <span>SPECIAL OFFERS</span></p>
+        </div>
+        <div class="form">
+            <input class="email" type="text" placeholder="your email address">
+            <button type="button">Sign Up</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div class="footer-col">
+            <div class="footer-logo">
+                <img src="/ks logo.png" alt="Website Logo">
+            </div>
+            <p>Pakistan</p>
+            <p>Email: info@website.com</p>
+            <p>Phone: +92 300 1234567</p>
+            <p>Other info: Mon-Fri 9:00-18:00</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Customer</h4>
+            <ul>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">View Cart</a></li>
+                <li><a href="#">Track Order</a></li>
+                <li><a href="#">Wishlist</a></li>
+                <li><a href="#">Help Center</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="app-btns">
+                <a class="play" href="#"><img src="appstore.png" alt="App Store"></a>
+                <a class="play" href="#"><img src="googleplay.png" alt="Google Play"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="cart.js"></script>
+</body>
+</html>
